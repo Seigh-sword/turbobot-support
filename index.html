@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboBot Support</title>
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --secondary: #3a7bd5;
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f8fafc;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: var(--card);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        h1 { color: var(--primary); text-align: center; }
+        .links { display: flex; justify-content: space-around; margin: 20px 0; }
+        .links a { color: var(--primary); text-decoration: none; font-weight: bold; }
+        .links a:hover { text-decoration: underline; }
+        form { display: flex; flex-direction: column; gap: 15px; }
+        input, textarea {
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            background: #334155;
+            color: white;
+        }
+        button {
+            padding: 12px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover { opacity: 0.9; transform: translateY(-2px); }
+        .footer { margin-top: 30px; font-size: 0.8rem; opacity: 0.6; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>TurboBot Support 🤖</h1>
+        <p style="text-align: center; opacity: 0.8;">Need help with the extension or the bot? Send us a message!</p>
+        
+        <div class="links">
+            <a href="https://www.youtube.com/channel/UCde3077jwsLsBb8HIjgZUiQ" target="_blank">YouTube</a>
+            <a href="https://github.com/seigh-sword" target="_blank">GitHub</a>
+            <a href="" target="_blank">Discord</a>
+        </div>
+
+        <form action="https://formspree.io/f/your_id" method="POST">
+            <label>Your Email:</label>
+            <input type="email" name="email" placeholder="so-and-so@example.com" required>
+            
+            <label>What's the issue?</label>
+            <textarea name="message" rows="5" placeholder="Describe your problem..." required></textarea>
+            
+            <button type="submit">Send Message 🚀</button>
+        </form>
+
+        <div class="footer">
+            Official Support for TurboBot | Powered by Atomic Mail & Cloudflare
+        </div>
+    </div>
+
+</body>
+</html>
